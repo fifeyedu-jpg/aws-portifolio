@@ -1,1 +1,5 @@
-
+MFA multifactor authentification is important to secure an account.It involves use more than one way of securing an account. Eg. a password and a one time passcode sent to your phone or code from a authenticator virtual or physical device that you attach to the account you are securing.
+i secured the root account with MFA because if someone breaks into the root account it leads then all my resources would be at risk of exploitation.
+Setup admin user with admin priviledges for everyday use because using the root account is risky as it grants unrestricted access and any accidental damages and security breaches more destructive.
+created a S3-read-only bucket policy which allowed read only access with two statements one for to get the bucket and another to get the bucket objects.
+created a test user to test the bucket policy in the policy simulator but the policy didnt work at first. the get object policy which was allowed in the policy was denied . this was because the simulator was not accurately pointed to the object .i had to change this in the simulator point it to the correct resource i.e the bucket.
